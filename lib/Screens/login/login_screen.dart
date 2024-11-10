@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_ui_clone/Screens/Otp/otp_screen.dart';
 import 'package:whatsapp_ui_clone/Widgets/ui_helper.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -124,8 +125,12 @@ class _LoginScreenState extends State<LoginScreen> {
           )
         ],
       ),
-      floatingActionButton:
-          UiHelper.customButton(callback: () {}, buttonname: "Next"),
+      floatingActionButton: UiHelper.customButton(
+          callback: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => OtpScreen()));
+          },
+          buttonname: "Next"),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
