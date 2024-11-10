@@ -127,8 +127,8 @@ class _LoginScreenState extends State<LoginScreen> {
       ),
       floatingActionButton: UiHelper.customButton(
           callback: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => OtpScreen()));
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const OtpScreen()));
           },
           buttonname: "Next"),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
