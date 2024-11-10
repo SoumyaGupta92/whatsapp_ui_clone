@@ -8,7 +8,7 @@ class UiHelper {
       width: 350,
       child: ElevatedButton(
           onPressed: () {
-            callback;
+            callback();
           },
           style: ElevatedButton.styleFrom(
             shape:

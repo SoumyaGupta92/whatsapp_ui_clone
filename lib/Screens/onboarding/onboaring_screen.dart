@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_ui_clone/Screens/login/login_screen.dart';
 import 'package:whatsapp_ui_clone/Widgets/ui_helper.dart';
 
 class OnBoardingScreen extends StatelessWidget {
@@ -52,7 +53,10 @@ class OnBoardingScreen extends StatelessWidget {
         ),
       ),
       floatingActionButton: UiHelper.customButton(
-        callback: () {},
+        callback: () {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => const LoginScreen()));
+        },
         buttonname: "Agree and continue",
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
